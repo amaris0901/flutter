@@ -309,7 +309,7 @@ class SecondScreen extends StatelessWidget {
             // off the stack.
             Navigator.pushNamed(context,'/third');
           },
-          child: const Text('Go back!'),
+          child: const Text('Go to third screen'),
         ),
       ),
     );
@@ -331,9 +331,9 @@ class ThirdScreen extends StatelessWidget {
           onPressed: () {
             // Navigate back to the first screen by popping the current route
             // off the stack.
-            Navigator.pop(context);
+            Navigator.pushNamed(context,'/');
           },
-          child: const Text('Go back!'),
+          child: const Text('Go back to first!'),
         ),
       ),
     );
